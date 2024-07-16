@@ -1,0 +1,11 @@
+<h2>To Do Tasks</h2>
+
+@for (task of todoTasks(); track $index){
+	<app-item [task]="task" />
+}
+
+<h2>Done Tasks</h2>
+
+@for (task of doneTasks(); track $index){
+	<app-item [task]="task" />
+}

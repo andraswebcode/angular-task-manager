@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+@import './vars.scss';
+
+* {
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrap {
+	width: 800px;
+	max-width: 100%;
+	margin: auto;
+}
+
+button,
+a {
+	display: inline-block;
+	margin-right: $gap;
+	color: $button-color;
+	background-color: $button-bg;
+	border: none;
+	outline: none;
+	padding: $button-padding;
+	font-size: $button-font-size;
+	text-decoration: none;
+	cursor: pointer;
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+	transition: box-shadow 200ms;
+	&:hover {
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+	}
+}
+
+input {
+	padding: $padding;
+}

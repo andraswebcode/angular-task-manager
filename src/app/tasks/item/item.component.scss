@@ -1,0 +1,15 @@
+@import './../../../vars.scss';
+
+div {
+	display: flex;
+	justify-content: space-between;
+	height: $task-height;
+	align-items: center;
+	margin-bottom: $gap;
+	padding: $padding;
+	background-color: $background;
+	p {
+		margin: 0;
+		color: $color;
+	}
+}

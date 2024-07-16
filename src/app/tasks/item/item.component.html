@@ -1,0 +1,6 @@
+<div>
+	<p>{{ task | task }}</p>
+	@if (!task.done){
+	<button (click)="done()">Done</button>
+	}
+</div>

@@ -1,0 +1,15 @@
+@import './../../../vars.scss';
+
+.new {
+	& > * {
+		display: block;
+		margin: auto;
+		margin-bottom: $gap;
+	}
+	input {
+		width: 100%;
+	}
+	button {
+		display: inline-block;
+	}
+}
